@@ -1,0 +1,16 @@
+create database db;
+
+use db;
+
+create table patient(
+	id int NOT NULL auto_increment,
+    patient_name varchar(45) NOT NULL, 
+	sex enum('Male', 'Female'),
+    age int,
+    Ref_by_DR varchar(45),
+    primary key(id)
+);
+
+select * from patient;
+
+delete from patient;
