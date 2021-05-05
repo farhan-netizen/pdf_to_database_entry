@@ -30,10 +30,10 @@ dr = L[16]
 import re 
 
 sir_name = re.search('Male', L[5])
-if (sir_name.group()) == 'Male':
-    gen = 'Male'
-elif (sir_name.group()) == 'Female':
+if (sir_name.group()) == 'Female':
     gen = 'Female'
+elif (sir_name.group()) == 'Male':
+    gen = 'Male'
 
 
 #Establishing Database connection
